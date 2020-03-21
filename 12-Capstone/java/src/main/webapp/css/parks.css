@@ -1,0 +1,85 @@
+@charset "ISO-8859-1";
+
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: #8eb8a1;
+}
+h1{
+	text-align: center;
+}
+body {
+  grid-template-rows: auto 1fr;
+  margin: 10px;
+  padding: 10px 30px;
+}
+
+main {
+  padding: 10px 30px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+#home-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-areas:
+        "homphot homdesc ";
+}
+#home-description {
+    grid-area: homdesc;
+    align-self: center;
+    font-size: 110%;
+    color: var(--grey);
+}
+}
+#home-photo {
+    grid-area: homphot;
+    align-self: center;
+    color: var(--grey);
+}
+#detail-grid {
+    display: grid;
+    grid-gap: 20px;
+    display: flex;
+	
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas:
+        "detphot detdet ";
+}
+#detail-details {
+    grid-area: detdet;
+    align-self: center;
+    font-size: 110%;
+    color: var(--grey);
+}
+}
+#detail-photo {
+    grid-area: detphot;
+    align-self: center;
+    color: var(--grey);
+}
+#forecast-grid {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+
+}
+#forecast-col {
+	grid-area: columnarea;
+}
+#forecast-image {
+    grid-area: foreimg;
+    align-self: center;
+    color: var(--grey);
+    width: 100px;
+
+}
+#forecast-data {
+	display: flex;
+	flex-direction: column;
+    grid-area: foredat;
+    align-self: center;
+    color: var(--grey);
+}
